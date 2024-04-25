@@ -7,6 +7,7 @@ const bio = document.querySelector('#bio');
 const avatar = document.querySelector('.avatar');
 const followers = document.querySelector('#Followers');
 const following = document.querySelector('#Following');
+const age = 8;
  async function fetchGithubAPI(value){
       const response = await fetch(`https://api.github.com/users/${value}`)
       const data =  await response.json();
